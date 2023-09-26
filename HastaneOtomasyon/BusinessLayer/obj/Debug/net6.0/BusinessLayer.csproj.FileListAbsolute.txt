@@ -1,0 +1,17 @@
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\DataLayer.dll
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\DataLayer.pdb
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
