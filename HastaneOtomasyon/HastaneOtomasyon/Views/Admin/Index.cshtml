@@ -1,9 +1,9 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-}
 
+@using EntityLayer
+@model Anasayfa
 
 
 <div class="container">
@@ -14,7 +14,86 @@
         <div class="col-md-6 col-sm-6">
             <a href="/Admin/DrKaydet">Doktor Kaydet</a>
         </div>
-        
+    </div>
+    <div class="row">
+        <div class="col-md col-sm">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Poliklinikler
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="container">
+                            <div class="row">
+                                @foreach (var item in Model.Pol)
+                                {
+                                    <div class="col-md-4 col-sm-6">
+                                        @item.PolikinlikAdi&nbsp; <a href="/Admin/PolSil/@item.PolikinlikId" class="btn btn-danger">Sil</a>
+                                        <hr>
+                                        @foreach (var doktor in Model.Doktor2Gruplu.GetValueOrDefault(item.PolikinlikId, new List<Doktor>()))
+                                        {
+
+                                           
+                                                @doktor.DoktorAdi @doktor.DoktorSoyadi
+                                            
+                                        }
+                                    </div>
+                                }
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Doktorlar
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Doktor Adı Soyadı</th>
+                                    <th scope="col">Poliklinlik</th>
+                                    <th scope="col">Düzenle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Doktorlar)
+                                {
+                                    <tr>
+                                        <th scope="row">@item.DoktorId</th>
+                                        <td>@item.DoktorAdi&nbsp;@item.DoktorSoyadi</td>
+                                        <td>@item.Polikinlik.PolikinlikAdi</td>
+                                        <td><a href="/Admin/DrGuncelle/@item.DoktorId" class="btn btn-success">Güncelle</a> <a href="/Admin/DrSil/@item.DoktorId" class="btn btn-danger">Sil</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Hastalar
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <ul>
+                            @foreach (var item in Model.Hasta)
+                            {
+                                <li>@item.HastaAdi&nbsp;@item.HastaSoyadi</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

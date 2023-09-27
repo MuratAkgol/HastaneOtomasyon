@@ -3,25 +3,40 @@
 *@
 @{
 }
+@using EntityLayer
+@model Anasayfa
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <form asp-action="DrKaydet" asp-controller="Admin" method="post">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Doktor TC</label>
+                    <input class="form-control" type="text" name="DoktorTc" required />
+                    <br />
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Doktor Adı</label>
+                    <input class="form-control" type="text" name="DoktorAdi" required />
+                    <br />
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Doktor Soyadı</label>
+                    <input class="form-control" type="text" name="DoktorSoyadi" required />
+                    <br />
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Poliklinik Adı</label>
+                    @*<input class="form-control" type="text" name="PolikinlikId" required />*@
 
-<form asp-action="DrKaydet" asp-controller="Admin" method="post">
-    <div class="input-box">
-        <span class="icon"><i class="fa-solid fa-user"></i></span>
-        <input type="text" name="DoktorTc" required />
-        <label>Doktor TC</label>
-        <br />
-        <span class="icon"><i class="fa-solid fa-user"></i></span>
-        <input type="text" name="DoktorAdi" required />
-        <label>Doktor Adı</label>
-        <br />
-        <span class="icon"><i class="fa-solid fa-user"></i></span>
-        <input type="text" name="DoktorSoyadi" required />
-        <label>Doktor Soyadı</label>
-        <br />
-        <span class="icon"><i class="fa-solid fa-user"></i></span>
-        <input type="text" name="PolikinlikId" required />
-        <label>Poliklinik Adı</label>
+                    <select class="form-select" aria-label="Default select example" name="PolikinlikId">
+                        @foreach (var item in Model.Pol)
+                        {
+                            <option value="@item.PolikinlikId">@item.PolikinlikAdi</option>
+                        }
+                    </select>
+
+                </div>
+                <button type="submit" class="btn btn-success mt-2">Ekle</button>
+            </form>
+        </div>
     </div>
-    <button type="submit" class="btn btn-secondary">Ekle</button>
-</form>
+</div>

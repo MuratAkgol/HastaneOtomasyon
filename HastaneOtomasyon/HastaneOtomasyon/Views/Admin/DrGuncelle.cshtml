@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using EntityLayer
+@model Doktor
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <form asp-action="DrGuncelle" asp-controller="Admin" method="post">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Doktor Id</label>
+                    @Html.TextBoxFor(x=>x.DoktorId, new { @class = "form-control", style="display:none", name="DoktorId"})
+                    <br />
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <label>Doktor TC</label>
+                        @Html.TextBoxFor(x=>x.DoktorTc, new { @class = "form-control"})
+                        <br />
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <label>Doktor Adı</label>
+                        @Html.TextBoxFor(x=>x.DoktorAdi, new { @class = "form-control", name = "DoktorAdi" })
+                        <br />
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <label>Doktor Soyadı</label>
+                        @Html.TextBoxFor(x=>x.DoktorSoyadi, new { @class = "form-control", name = "DoktorSoyadi" })
+                        <br />
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <label>Poliklinik Adı</label>
+                    
+                    <select class="form-select" aria-label="Default select example" name="PolikinlikId">
+                        @foreach (var poliklinik in @ViewBag.pol)
+                        {
+                            <option value="@poliklinik.PolikinlikId" selected>@poliklinik.PolikinlikAdi</option>                            
+                        }
+                    </select>
+
+                </div>
+                <button type="submit" class="btn btn-success mt-2">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>

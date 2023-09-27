@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Her şey\Kod\HastaneOtomasyon\HastaneOtomasyon
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Her şey/Kod/HastaneOtomasyon/HastaneOtomasyon/Views/Admin/DrGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRHJHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Her şey/Kod/HastaneOtomasyon/HastaneOtomasyon/Views/Admin/DrKaydet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRHJLYXlkZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

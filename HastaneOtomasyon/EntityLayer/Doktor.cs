@@ -15,5 +15,6 @@ namespace EntityLayer
         public int PolikinlikId { get; set; }
         public Polikinlik Polikinlik { get; set; }
         public ICollection<Hasta> Hastalar { get; set; }
+        
     }
 }
