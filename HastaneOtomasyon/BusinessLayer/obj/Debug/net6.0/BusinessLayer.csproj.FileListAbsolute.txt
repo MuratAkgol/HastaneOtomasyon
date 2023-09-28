@@ -15,3 +15,20 @@ D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dl
 D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
 D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
 D:\Her şey\Kod\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CopyComplete
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

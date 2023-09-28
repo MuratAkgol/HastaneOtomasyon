@@ -2,10 +2,48 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-<a href="/Admin/Index">Kayıt Ekranı</a>
 
-<a href="/Admin/Hastalar">Hastalar</a>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md col-sm text-center">
+            <h2>Hoş Geldin</h2>
+            <br />
+            <p>Aşağıdan yapacağınız işlemi seçebilirsiniz</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md col-sm text-center mt-2">
+            <a href="/Admin/Index" style="--clr: #7808d0" class="button">
+                <span class="button__icon-wrapper">
+                    <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                        <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                    </svg>
+
+                    <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                        <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                    </svg>
+                </span>
+                Kayıt Ekranı
+            </a>
+        </div>
+        <div class="col-md col-sm text-center mt-2">
+            <a href="/Admin/Hastalar" style="--clr: #7808d0" class="button">
+                <span class="button__icon-wrapper">
+                    <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                        <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                    </svg>
+
+                    <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                        <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                    </svg>
+                </span>
+                Hastalar
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1947,11 +1947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Her şey\\Kod\\HastaneOtomasyon\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "D:\\Her şey\\Kod\\HastaneOtomasyon\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-      "outputPath": "D:\\Her şey\\Kod\\HastaneOtomasyon\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1973,8 +1973,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Her şey\\Kod\\HastaneOtomasyon\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "D:\\Her şey\\Kod\\HastaneOtomasyon\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\DataLayer\\DataLayer.csproj"
             }
           }
         }

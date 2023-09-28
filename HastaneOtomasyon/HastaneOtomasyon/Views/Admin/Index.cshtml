@@ -6,13 +6,68 @@
 @model Anasayfa
 
 
+<style>
+    #button {
+        --color: #0077ff;
+        font-family: inherit;
+        display: inline-block;
+        width: 30%;
+        height: 2.6em;
+        line-height: 2.5em;
+        overflow: hidden;
+        margin: 20px;
+        font-size: 17px;
+        z-index: 1;
+        color: var(--color);
+        border: 2px solid var(--color);
+        border-radius: 6px;
+        position: relative;
+    }
+
+        #button::before {
+            position: absolute;
+            content: "";
+            background: var(--color);
+            width: 100vh;
+            height: 200px;
+            z-index: -1;
+            border-radius: 50%;
+        }
+
+        #button:hover {
+            color: white;
+        }
+
+        #button:before {
+            top: 100%;
+            left: 100%;
+            transition: .3s all;
+        }
+
+        #button:hover::before {
+            top: -30px;
+            left: -30px;
+        }
+</style>
+
+
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-sm-6">
-            <a href="/Admin/PolKaydet">Poliklinik Kaydet</a>
+        <div class="col-md-6 col-sm-6 text-center">
+
+            <a href="/Admin/PolKaydet">
+                <button id="button">
+                    Poliklinik Kaydet
+                </button>
+            </a>
+
         </div>
-        <div class="col-md-6 col-sm-6">
-            <a href="/Admin/DrKaydet">Doktor Kaydet</a>
+        <div class="col-md-6 col-sm-6 text-center">
+            <a href="/Admin/DrKaydet">
+                <button id="button">
+                    Doktor Kaydet
+                </button>
+            </a>
         </div>
     </div>
     <div class="row">
@@ -21,7 +76,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Poliklinikler
+                            <b>Poliklinikler</b>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -30,14 +85,11 @@
                                 @foreach (var item in Model.Pol)
                                 {
                                     <div class="col-md-4 col-sm-6">
-                                        @item.PolikinlikAdi&nbsp; <a href="/Admin/PolSil/@item.PolikinlikId" class="btn btn-danger">Sil</a>
+                                        <b>@item.PolikinlikAdi&nbsp;</b> <a href="/Admin/PolSil/@item.PolikinlikId" class="btn btn-danger btn-sm">Sil</a>
                                         <hr>
                                         @foreach (var doktor in Model.Doktor2Gruplu.GetValueOrDefault(item.PolikinlikId, new List<Doktor>()))
                                         {
-
-                                           
-                                                @doktor.DoktorAdi @doktor.DoktorSoyadi
-                                            
+                                            <p> @doktor.DoktorAdi&nbsp;@doktor.DoktorSoyadi</p>
                                         }
                                     </div>
                                 }
@@ -50,14 +102,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Doktorlar
+                            <b>Doktorlar</b>
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
+                                    <th scope="col">Sıra</th>
                                     <th scope="col">Doktor Adı Soyadı</th>
                                     <th scope="col">Poliklinlik</th>
                                     <th scope="col">Düzenle</th>
@@ -70,7 +122,7 @@
                                         <th scope="row">@item.DoktorId</th>
                                         <td>@item.DoktorAdi&nbsp;@item.DoktorSoyadi</td>
                                         <td>@item.Polikinlik.PolikinlikAdi</td>
-                                        <td><a href="/Admin/DrGuncelle/@item.DoktorId" class="btn btn-success">Güncelle</a> <a href="/Admin/DrSil/@item.DoktorId" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Admin/DrGuncelle/@item.DoktorId" class="btn btn-success mb-2">Güncelle</a> <a href="/Admin/DrSil/@item.DoktorId" class="btn btn-danger mb-2">Sil</a></td>
                                     </tr>
                                 }
                             </tbody>
@@ -80,7 +132,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Hastalar
+                            <b>Hastalar</b>
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">

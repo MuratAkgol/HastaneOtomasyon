@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B7QrxBsR81qa8QHtd+ICI7Fhojw/kkv1bj/RsAH+q0jhDVL3gljazvrSj7jI5d3x2HhE4DQ6PXnOdNcLOb1qCQ==",
+  "dgSpecHash": "2THPaYpnYzApYutwPwsDGIHuFnQ8K2sZ/gr2MttssMxxnfSYCEW5ASBbiX9qgkI/vCB9+b2GHez+Cc/fSfgPZQ==",
   "success": true,
-  "projectFilePath": "D:\\Her şey\\Kod\\HastaneOtomasyon\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huawei\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\huawei\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

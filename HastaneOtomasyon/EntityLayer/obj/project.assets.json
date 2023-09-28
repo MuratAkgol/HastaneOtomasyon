@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Her şey\\Kod\\HastaneOtomasyon\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "D:\\Her şey\\Kod\\HastaneOtomasyon\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-      "outputPath": "D:\\Her şey\\Kod\\HastaneOtomasyon\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\huawei\\Github-Proje2\\HastaneOtomasyon\\HastaneOtomasyon\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
