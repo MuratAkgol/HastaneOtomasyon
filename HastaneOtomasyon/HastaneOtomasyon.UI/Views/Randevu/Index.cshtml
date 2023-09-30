@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+*@
+@using Microsoft.AspNetCore.Http;
+@using EntityLayer
+@model Anasayfa
+
+@{
+
+}
+
+
+
+<form asp-action="SecilenPolDr" asp-controller="Randevu">
+    <p>Randevu almak istediğiniz polikliniği seçiniz</p>
+    <select class="form-select" aria-label="Default select example" name="PolikinlikId" id="poliklinikSec">
+        @foreach (var item in Model.Pol)
+        {
+            <option value="@item.PolikinlikId">@item.PolikinlikAdi</option>
+        }
+    </select>
+
+    <button type="submit">Devam et</button>
+</form>

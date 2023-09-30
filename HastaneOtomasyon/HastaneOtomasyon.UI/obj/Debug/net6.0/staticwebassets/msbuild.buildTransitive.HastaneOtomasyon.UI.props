@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HastaneOtomasyon.UI.props" />
+</Project>

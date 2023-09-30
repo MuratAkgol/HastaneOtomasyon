@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using EntityLayer
+@model Anasayfa
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md col-sm-12 mt-4"><img src="https://www.reshot.com/preview-assets/illustrations/VSYC6FTH42/medicine-healthcare-VSYC6FTH42-w600.jpg" class="img-fluid" /></div>
+        <div class="col-md mt-4 mb-3">
+            <h2>Sevgili İzmir Halkı,</h2>
+
+            Sağlık, en değerli varlığınızdır ve sağlık hizmetleri, yaşam kalitenizi artırmak için kritik bir rol oynar. Biz, İzmir Toplu Sağlık Hastanesi olarak, sizin sağlığınıza odaklanmış bir ekibiz. Bugün burada sizlere en iyi sağlık hizmetini sunma taahhüdümüzü dile getirmek için bulunuyoruz.
+
+            Hastanemiz, İzmir'in sağlık ihtiyaçlarına yanıt vermek amacıyla kurulmuş modern bir sağlık tesisi olup, 25.000 metrekare kapalı alana sahiptir. 150 yatak kapasitesi, 7 ameliyathane, son teknoloji tıbbi ekipmanlar ve uzman hekimlerimizle donatılmıştır. Amacımız, her aşamada mükemmel bir hasta deneyimi sunarak, hastalarımızın sağlığını en üst düzeye çıkarmak ve onları sağlıklı bir yaşama kavuşturmaktır.
+
+            Sizlere sunduğumuz hizmetler arasında genel cerrahi, iç hastalıkları, kadın doğum, çocuk sağlığı, radyoloji ve daha fazlası bulunmaktadır. Ayrıca, sağlığınızı korumanıza yardımcı olacak wellness programları ve sağlıklı yaşam danışmanlığı da sunuyoruz.
+
+            İzmir Toplu Sağlık Hastanesi olarak, sizleri ve ailenizi sağlıklı bir geleceğe taşımayı taahhüt ediyoruz. Sağlıkla ilgili herhangi bir ihtiyacınızda yanınızdayız. Sizleri hastanemize bekliyoruz.
+        </div>
+        <hr />
+    </div>
+    <div class="row">
+        <div class="col-12 text-center"><h3 class="fw-bold">DOKTORLARIMIZ</h3></div>
+            @foreach (var item in Model.Doktorlar)
+            {
+        <div class="col-md-4 mt-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Doc.Dr @item.DoktorAdi&nbsp;@item.DoktorSoyadi</h5>
+                        <p class="card-text">@item.Polikinlik.PolikinlikAdi</p>
+                        <a href="/Home/Hakkimizda" class="btn btn-primary">Detaylı Bilgi İçin Tıklayınız</a>
+                    </div>
+                </div>
+            </div>
+            }
+
+            
+        </div>
+       @* <div class="col-4 mt-3">
+            <div class="card" style="width: 18rem;">
+                <img src="~/image/hastane.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doc.Dr Emin Güven</h5>
+                    <p class="card-text">KBB alanında uzman doktorumuz Emin Güven</p>
+                    <a href="/Home/Hakkimizda" class="btn btn-primary">Detaylı Bilgi İçin Tıklayınız</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mt-3">
+            <div class="card" style="width: 18rem;">
+                <img src="~/image/hastane.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doc.Dr Emin Güven</h5>
+                    <p class="card-text">KBB alanında uzman doktorumuz Emin Güven</p>
+                    <a href="/Home/Hakkimizda" class="btn btn-primary">Detaylı Bilgi İçin Tıklayınız</a>
+                </div>
+            </div>
+        </div>*@
+
+    
+
+</div>
