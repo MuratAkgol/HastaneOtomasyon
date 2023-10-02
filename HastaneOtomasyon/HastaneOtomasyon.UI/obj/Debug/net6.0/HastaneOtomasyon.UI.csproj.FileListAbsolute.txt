@@ -65,3 +65,5 @@ C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon
 C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon.UI\bin\Debug\net6.0\DataLayer.pdb
 C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon.UI\bin\Debug\net6.0\EntityLayer.pdb
 C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon.UI\obj\Debug\net6.0\HastaneOtomasyon.UI.csproj.CopyComplete
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon.UI\bin\Debug\net6.0\BusinessLayer.dll
+C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon.UI\bin\Debug\net6.0\BusinessLayer.pdb

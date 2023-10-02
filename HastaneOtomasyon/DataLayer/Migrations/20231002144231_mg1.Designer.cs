@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230926193702_mgTablolar")]
-    partial class mgTablolar
+    [Migration("20231002144231_mg1")]
+    partial class mg1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -98,6 +98,46 @@ namespace DataLayer.Migrations
                     b.HasKey("PolikinlikId");
 
                     b.ToTable("tbl_Polikinlikler");
+                });
+
+            modelBuilder.Entity("EntityLayer.Randevu", b =>
+                {
+                    b.Property<int>("RandevuId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RandevuId"), 1L, 1);
+
+                    b.Property<int>("DoktorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Hasta")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Saat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RandevuId");
+
+                    b.ToTable("tbl_Randevu");
+                });
+
+            modelBuilder.Entity("EntityLayer.Saatler", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Saat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tbl_Saatler");
                 });
 
             modelBuilder.Entity("EntityLayer.Doktor", b =>

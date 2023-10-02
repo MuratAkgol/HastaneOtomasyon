@@ -4,7 +4,7 @@
 
 namespace DataLayer.Migrations
 {
-    public partial class mgTablolar : Migration
+    public partial class mg1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,6 +19,34 @@ namespace DataLayer.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_tbl_Polikinlikler", x => x.PolikinlikId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "tbl_Randevu",
+                columns: table => new
+                {
+                    RandevuId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Saat = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Hasta = table.Column<int>(type: "int", nullable: false),
+                    DoktorId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_tbl_Randevu", x => x.RandevuId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "tbl_Saatler",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Saat = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_tbl_Saatler", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -80,6 +108,12 @@ namespace DataLayer.Migrations
         {
             migrationBuilder.DropTable(
                 name: "tbl_Hastalar");
+
+            migrationBuilder.DropTable(
+                name: "tbl_Randevu");
+
+            migrationBuilder.DropTable(
+                name: "tbl_Saatler");
 
             migrationBuilder.DropTable(
                 name: "tbl_Doktorlar");

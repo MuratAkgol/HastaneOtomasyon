@@ -11,15 +11,23 @@
 }
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm">
 
-<form asp-action="SecilenPolDr" asp-controller="Randevu">
-    <p>Randevu almak istediğiniz polikliniği seçiniz</p>
-    <select class="form-select" aria-label="Default select example" name="PolikinlikId" id="poliklinikSec">
-        @foreach (var item in Model.Pol)
-        {
-            <option value="@item.PolikinlikId">@item.PolikinlikAdi</option>
-        }
-    </select>
+            <form asp-action="SecilenPolDr" asp-controller="Randevu">
+                <p>Randevu almak istediğiniz polikliniği seçiniz</p>
+                <select class="form-select" aria-label="Default select example" name="PolikinlikId" id="poliklinikSec">
+                    @foreach (var item in Model.Pol)
+                    {
+                        <option value="@item.PolikinlikId">@item.PolikinlikAdi</option>
+                    }
+                </select>
 
-    <button type="submit">Devam et</button>
-</form>
+                <button type="submit" class="btn btn-success mt-2">Devam et</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>

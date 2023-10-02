@@ -11,19 +11,41 @@
 }
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm">
+            <form asp-action="RandevuOlustur" asp-controller="Randevu" method="post">
+                <p>Randevu almak istediğiniz doktoru seçiniz</p>
+                <select class="form-select" aria-label="Default select example" name="DoktorId" id="poliklinikSec" required>
+                    @foreach (var item in Model.Doktorlar)
+                    {
 
-<form asp-action="SecilenPolDr" asp-controller="Randevu">
-    <p>Randevu almak istediğiniz polikliniği seçiniz</p>
-    <select class="form-select" aria-label="Default select example" name="PolikinlikId" id="poliklinikSec">
-        @foreach (var item in Model.Pol)
-        {
-            <option value="@item.PolikinlikId">@item.PolikinlikAdi</option>
-        }
-    </select>
+                        <option value="@item.DoktorId">@item.DoktorAdi&nbsp;@item.DoktorSoyadi</option>
+                    }
+                </select>
+                @foreach (var item in Model.Saat)
+                {
+                    <input type="radio" name="Saat" value="@item.Saat" />
+                    @item.Saat
+                    <br />
+                }
 
-    <button type="submit">Devam et</button>
-</form>
+                <div class="input-box mt-2">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Hasta TC</label>
+                    <input class="form-control" type="text" name="HastaTc" required />
 
-    @foreach(var item in Model.Doktorlar){
-        @item.DoktorAdi
-    }
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Hasta Adı</label>
+                    <input class="form-control" type="text" name="HastaAdi" required />
+
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <label>Hasta Soyadı</label>
+                    <input class="form-control" type="text" name="HastaSoyadi" required />
+                    <br />
+                </div>
+                <button type="submit" class="btn btn-success mt-2">Devam et</button>
+            </form>
+        </div>
+    </div>
+</div>

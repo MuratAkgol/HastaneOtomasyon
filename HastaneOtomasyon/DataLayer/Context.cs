@@ -18,5 +18,7 @@ namespace DataLayer
         public DbSet<Doktor> tbl_Doktorlar { get; set; }
         public DbSet<Polikinlik> tbl_Polikinlikler { get; set; }
         public DbSet<Hasta> tbl_Hastalar{ get; set; }
+        public DbSet<Saatler> tbl_Saatler { get; set; }
+        public DbSet<Randevu> tbl_Randevu { get; set; }
     }
 }
