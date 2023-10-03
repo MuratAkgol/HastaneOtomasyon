@@ -13,7 +13,7 @@
             <form asp-action="DrGuncelle" asp-controller="Admin" method="post">
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
-                    <label>Doktor Id</label>
+                    <label style=" display:none">Doktor Id</label>
                     @Html.TextBoxFor(x=>x.DoktorId, new { @class = "form-control", style="display:none", name="DoktorId"})
                     <br />
                         <span class="icon"><i class="fa-solid fa-user"></i></span>

@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using EntityLayer
+@model Anasayfa
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md col-sm">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Hasta ID</th>
+                        <th>Hasta Adı Soyadı</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Hasta)
+                    {
+                        <tr>
+                            <td>@item.HastaId</td>
+                            <td>@item.HastaAdi&nbsp;@item.HastaSoyadi</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

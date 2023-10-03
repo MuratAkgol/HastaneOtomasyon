@@ -74,7 +74,7 @@ namespace HastaneOtomasyon.Admin.Controllers
         [HttpPost]
         public IActionResult DrKaydet(Doktor dr)
         {
-            dr.DoktorTc = dr.DoktorSifre;
+            dr.DoktorSifre = dr.DoktorTc;
             _doktorlar.Add(dr);
             return RedirectToAction("Index");
         }
@@ -84,6 +84,7 @@ namespace HastaneOtomasyon.Admin.Controllers
         public IActionResult DrGuncelle(int id)
         {
             _doktor = _doktorlar.GetById(id);
+            
             ana.Doktorlar = db.tbl_Doktorlar.Where(x => x.DoktorId == id).ToList();
             int drpolid = db.tbl_Doktorlar.FirstOrDefault(x => x.DoktorId == id).PolikinlikId;
             ana.Pol = db.tbl_Polikinlikler.ToList();
@@ -93,6 +94,7 @@ namespace HastaneOtomasyon.Admin.Controllers
         [HttpPost]
         public IActionResult DrGuncelle(Doktor dr)
         {
+            dr.DoktorSifre = dr.DoktorTc;
             _doktorlar.Update(dr);
             return RedirectToAction("Index");
         }
@@ -107,6 +109,11 @@ namespace HastaneOtomasyon.Admin.Controllers
             _polikinlik = _poliklinikler.GetById(id);
             _poliklinikler.Delete(_polikinlik);
             return RedirectToAction("Index");
+        }
+        public IActionResult Hastalar()
+        {
+            ana.Hasta = db.tbl_Hastalar.ToList();
+            return View(ana);
         }
     }
 }
