@@ -33,7 +33,27 @@ namespace HastaneOtomasyon.Admin.Controllers
 
             return View(ana);
         }
+        public List<RandevuViewModel> GetCustomRandevular()
+        {
+            var customRandevular = from r in db.tbl_Randevu
+                                   join d in db.tbl_Doktorlar on r.DoktorId equals d.DoktorId
+                                   join h in db.tbl_Hastalar on r.Hasta equals h.HastaId
+                                   select new RandevuViewModel
+                                   {
+                                       RandevuId = r.RandevuId,
+                                       Saat = r.Saat,
+                                       HastaAdiSoyadi = h.HastaAdi + ' ' + h.HastaSoyadi,
+                                       DoktorAdiSoyadi = d.DoktorAdi + ' ' + d.DoktorSoyadi
+                                   };
 
+            return customRandevular.ToList();
+        }
+        public IActionResult Randevular()
+        {
+            var customRandevular = GetCustomRandevular();
+            return View(customRandevular);
+            
+        }
         [HttpGet]
         public IActionResult PolKaydet()
         {
