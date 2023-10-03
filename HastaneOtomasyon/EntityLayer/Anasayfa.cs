@@ -16,5 +16,6 @@ namespace EntityLayer
         public Dictionary<int, List<Doktor>> Doktor2Gruplu { get; set; }
         public List<Saatler> Saat{ get; set; }
         public List<Randevu> Randevular { get; set; }
+        public List<RandevuViewModel> RandevuView { get; set; }
     }
 }

@@ -74,6 +74,7 @@ namespace HastaneOtomasyon.Admin.Controllers
         [HttpPost]
         public IActionResult DrKaydet(Doktor dr)
         {
+            dr.DoktorTc = dr.DoktorSifre;
             _doktorlar.Add(dr);
             return RedirectToAction("Index");
         }

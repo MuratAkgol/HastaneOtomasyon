@@ -10,6 +10,7 @@ namespace EntityLayer
     {
         public int DoktorId { get; set; }
         public string DoktorTc { get; set; }
+        public string DoktorSifre { get; set; }
         public string DoktorAdi { get; set; }
         public string DoktorSoyadi { get; set; }
         public int PolikinlikId { get; set; }

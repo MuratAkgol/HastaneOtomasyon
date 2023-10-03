@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{A9F5BC0F-2F29-4E19-8F64-CB4C5F5676B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HastaneOtomasyon.UI", "HastaneOtomasyon.UI\HastaneOtomasyon.UI.csproj", "{E382BEDB-5887-499A-B1A1-502C8EC42999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HastaneOtomasyon.UI", "HastaneOtomasyon.UI\HastaneOtomasyon.UI.csproj", "{E382BEDB-5887-499A-B1A1-502C8EC42999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HastaneOtomasyon.Doktor", "HastaneOtomasyon.Doktor\HastaneOtomasyon.Doktor.csproj", "{51A9B38F-BFD3-47C6-AE61-B3CB7EE2E778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E382BEDB-5887-499A-B1A1-502C8EC42999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E382BEDB-5887-499A-B1A1-502C8EC42999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E382BEDB-5887-499A-B1A1-502C8EC42999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A9B38F-BFD3-47C6-AE61-B3CB7EE2E778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A9B38F-BFD3-47C6-AE61-B3CB7EE2E778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A9B38F-BFD3-47C6-AE61-B3CB7EE2E778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A9B38F-BFD3-47C6-AE61-B3CB7EE2E778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
