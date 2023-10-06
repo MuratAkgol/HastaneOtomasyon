@@ -14,5 +14,6 @@ namespace EntityLayer
         public string HastaSoyadi { get; set; }
         public int DoktorId { get; set; }
         public Doktor Doktor { get; set; }
+        public ICollection<Recete> Receteler { get; set; }
     }
 }

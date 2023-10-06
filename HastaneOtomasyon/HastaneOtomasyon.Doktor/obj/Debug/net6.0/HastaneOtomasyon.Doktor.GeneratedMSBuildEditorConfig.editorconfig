@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\huawei\Github-Proje2\HastaneOtomasyon\HastaneOtomasyon\HastaneOtomasyon.Doktor
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/huawei/Github-Proje2/HastaneOtomasyon/HastaneOtomasyon/HastaneOtomasyon.Doktor/Views/Doktor/Bilgi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yXEJpbGdpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/huawei/Github-Proje2/HastaneOtomasyon/HastaneOtomasyon/HastaneOtomasyon.Doktor/Views/Doktor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/huawei/Github-Proje2/HastaneOtomasyon/HastaneOtomasyon/HastaneOtomasyon.Doktor/Views/Doktor/Recete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yXFJlY2V0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/huawei/Github-Proje2/HastaneOtomasyon/HastaneOtomasyon/HastaneOtomasyon.Doktor/Views/Doktor/VarolanRecete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yXFZhcm9sYW5SZWNldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/huawei/Github-Proje2/HastaneOtomasyon/HastaneOtomasyon/HastaneOtomasyon.Doktor/Views/Home/Index.cshtml]

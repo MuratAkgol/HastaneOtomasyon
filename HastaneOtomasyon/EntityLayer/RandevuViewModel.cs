@@ -11,6 +11,7 @@ namespace EntityLayer
         public int RandevuId { get; set; }
         public string Saat { get; set; }
         public int Doktor { get; set; }
+        public int HastaId { get; set; }
         public string HastaAdiSoyadi { get; set; }
         public string DoktorAdiSoyadi { get; set; }
     }

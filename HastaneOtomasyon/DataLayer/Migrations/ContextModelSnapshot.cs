@@ -33,6 +33,10 @@ namespace DataLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("DoktorSifre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("DoktorSoyadi")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -121,6 +125,28 @@ namespace DataLayer.Migrations
                     b.ToTable("tbl_Randevu");
                 });
 
+            modelBuilder.Entity("EntityLayer.Recete", b =>
+                {
+                    b.Property<int>("ReceteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReceteId"), 1L, 1);
+
+                    b.Property<int>("HastaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReceteIcerik")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ReceteId");
+
+                    b.HasIndex("HastaId");
+
+                    b.ToTable("tbl_Recete");
+                });
+
             modelBuilder.Entity("EntityLayer.Saatler", b =>
                 {
                     b.Property<int>("Id")
@@ -160,9 +186,25 @@ namespace DataLayer.Migrations
                     b.Navigation("Doktor");
                 });
 
+            modelBuilder.Entity("EntityLayer.Recete", b =>
+                {
+                    b.HasOne("EntityLayer.Hasta", "Hasta")
+                        .WithMany("Receteler")
+                        .HasForeignKey("HastaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Hasta");
+                });
+
             modelBuilder.Entity("EntityLayer.Doktor", b =>
                 {
                     b.Navigation("Hastalar");
+                });
+
+            modelBuilder.Entity("EntityLayer.Hasta", b =>
+                {
+                    b.Navigation("Receteler");
                 });
 
             modelBuilder.Entity("EntityLayer.Polikinlik", b =>

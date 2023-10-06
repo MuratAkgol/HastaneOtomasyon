@@ -9,6 +9,6 @@ namespace EntityLayer
     public class Saatler
     {
         public int Id { get; set; }
-        public string Saat { get; set; }
+        public string RandevuSaati { get; set; }
     }
 }

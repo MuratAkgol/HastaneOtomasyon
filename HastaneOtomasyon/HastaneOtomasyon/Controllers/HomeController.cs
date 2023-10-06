@@ -1,4 +1,7 @@
-﻿using HastaneOtomasyon.Models;
+﻿using BusinessLayer.Concrate;
+using DataLayer;
+using EntityLayer;
+using HastaneOtomasyon.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,7 +10,9 @@ namespace HastaneOtomasyon.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        Context db = new Context();
+        Saatler _saat;
+        SaatlerManager _saatler = new SaatlerManager();
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -17,7 +22,18 @@ namespace HastaneOtomasyon.Controllers
         {
             return View();
         }
-
+        
+        public IActionResult Saatler()
+        {
+            var result = db.tbl_Saatler.ToList();
+            return View(result);
+        }
+       
+        public IActionResult SaatKaydet(Saatler Saat)
+        {
+            _saatler.Add(Saat);
+            return RedirectToAction("Saatler");
+        }
         public IActionResult Privacy()
         {
             return View();

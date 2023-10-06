@@ -10,11 +10,10 @@
 
 }
 
-
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-sm">
-            <form asp-action="RandevuOlustur" asp-controller="Randevu" method="post">
+            <form asp-action="RandevuOlustur" asp-controller="Randevu" method="post" id="myForm">
                 <p>Randevu almak istediğiniz doktoru seçiniz</p>
                 <select class="form-select" aria-label="Default select example" name="DoktorId" id="poliklinikSec" required>
                     @foreach (var item in Model.Doktorlar)
@@ -25,23 +24,23 @@
                 </select>
                 @foreach (var item in Model.Saat)
                 {
-                    <input type="radio" name="Saat" value="@item.Saat" />
-                    @item.Saat
+                    <input type="radio" name="Saat" value="@item.RandevuSaati" />
+                    @item.RandevuSaati
                     <br />
                 }
 
                 <div class="input-box mt-2">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
                     <label>Hasta TC</label>
-                    <input class="form-control" type="text" name="HastaTc" required />
+                    <input class="form-control" type="text" name="HastaTc" required id="HastaTc" />
 
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
                     <label>Hasta Adı</label>
-                    <input class="form-control" type="text" name="HastaAdi" required />
+                    <input class="form-control" type="text" name="HastaAdi" id="HastaAdi" required />
 
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
                     <label>Hasta Soyadı</label>
-                    <input class="form-control" type="text" name="HastaSoyadi" required />
+                    <input class="form-control" type="text" name="HastaSoyadi" id="HastaSoyadi" required />
                     <br />
                 </div>
                 <button type="submit" class="btn btn-success mt-2">Devam et</button>

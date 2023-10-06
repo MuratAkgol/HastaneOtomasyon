@@ -8,24 +8,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md col-sm">
-            @foreach (var item in Model)
-            {
-                <h2>
-                    Hoş Geldin
-                    @item.DoktorAdiSoyadi
-                </h2>
-            }
+            <h2>Hoş Geldin @ViewBag.isim @ViewBag.soyisim</h2>
         </div>
         <hr />
         <div class="row">
             <div class="col-md col-sm">
-              <h3>Randevularınız:</h3>
+                <h3>Randevularınız:</h3>
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
                             <th>Randevu ID</th>
                             <th>Saat</th>
                             <th>Hasta Adı Soyadı</th>
+                            <th>İşlem</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +30,11 @@
                                 <td>@randevu.RandevuId</td>
                                 <td>@randevu.Saat</td>
                                 <td>@randevu.HastaAdiSoyadi</td>
+                                <td>
+                                    <a class="btn btn-success" href="/Doktor/Bilgi/@randevu.HastaId">Hasta Bilgisi</a>
+                                    <a class="btn btn-primary" href="/Doktor/Recete/@randevu.HastaId">Reçete Yaz</a>
+                                    <a class="btn btn-danger" href="/Doktor/VarolanRecete/@randevu.HastaId">Varolan Reçete</a>
+                                </td>
                             </tr>
                         }
                     </tbody>

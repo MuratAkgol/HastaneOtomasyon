@@ -38,7 +38,7 @@ namespace HastaneOtomasyon.UI.Controllers
             _hastalar.Add(hasta);
             ran.Hasta = hasta.HastaId;
             _randevular.Add(ran);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Home");
         }
     }
 }
