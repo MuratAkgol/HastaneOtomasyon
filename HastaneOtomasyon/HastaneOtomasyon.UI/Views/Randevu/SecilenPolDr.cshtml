@@ -19,7 +19,7 @@
                     @foreach (var item in Model.Doktorlar)
                     {
 
-                        <option value="@item.DoktorId">@item.DoktorAdi&nbsp;@item.DoktorSoyadi</option>
+                        <option value="@item.DoktorId" id="dok">@item.DoktorAdi&nbsp;@item.DoktorSoyadi</option>
                     }
                 </select>
                 @foreach (var item in Model.Saat)

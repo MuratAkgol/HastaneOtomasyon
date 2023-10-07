@@ -28,7 +28,13 @@ namespace HastaneOtomasyon.Controllers
             var result = db.tbl_Saatler.ToList();
             return View(result);
         }
-       
+       public IActionResult SaatSil(int id)
+        {
+            _saat = _saatler.GetById(id);
+            _saatler.Delete(_saat);
+
+            return RedirectToAction("Saatler");
+        }
         public IActionResult SaatKaydet(Saatler Saat)
         {
             _saatler.Add(Saat);
