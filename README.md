@@ -21,4 +21,4 @@ Projeyi yerel bir geliştirme ortamında çalıştırmak için aşağıdaki adı
 2. **Hastane Otomasyonu'nu Başlatın:** Ana proje olan "Hastane Otomasyonu" projesini başlatın.
 3. **Tarayıcıda Görüntüleme:** Proje başarıyla çalışıyorsa, bir web tarayıcısında projeyi görüntülemek için tarayıcınıza "localhost" adresini girin.
 
-##Bu yazı ChatGPT ile yazılmıştır.
+## Bu yazı ChatGPT ile yazılmıştır.
