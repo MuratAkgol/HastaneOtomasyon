@@ -47,6 +47,9 @@ namespace HastaneOtomasyon.Doktor.Controllers
         {
             ViewBag.bilgi = id;
             var result = db.tbl_Hastalar.Where(x=>x.HastaId == id).ToList();
+            ViewBag.adi = db.tbl_Hastalar.FirstOrDefault(x => x.HastaId == id).HastaAdi;
+            ViewBag.soyadi = db.tbl_Hastalar.FirstOrDefault(x => x.HastaId == id).HastaSoyadi;
+
             return View(result);
         }
         [HttpGet]

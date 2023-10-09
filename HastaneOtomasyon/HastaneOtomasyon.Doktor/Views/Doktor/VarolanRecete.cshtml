@@ -8,11 +8,26 @@
 
 <div class="container">
     <div class="row">
-        @foreach (var item in Model)
-        {
-           <b>Reçete no: @item.ReceteId</b>
-           <p>@item.ReceteIcerik</p>
-           <hr />
-        }
+        <div class="col-md col-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Reçete Id</th>
+                        <th scope="col">Tanı ve Reçete</th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+
+                    <tbody>
+                        <tr>
+                            <td>@item.ReceteId</td>
+                            <td>@item.ReceteIcerik</td>
+                        </tr>
+
+                    </tbody>
+                }
+            </table>
+        </div>
     </div>
 </div>

@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-md-6 col-sm">
             <form asp-action="RandevuOlustur" asp-controller="Randevu" method="post" id="myForm">
-                <p>Randevu almak istediğiniz doktoru seçiniz</p>
+                <p>Randevu almak istediğiniz <b>Doktoru</b> seçiniz</p>
                 <select class="form-select" aria-label="Default select example" name="DoktorId" id="poliklinikSec" required>
                     @foreach (var item in Model.Doktorlar)
                     {
@@ -28,6 +28,7 @@
                     @item.RandevuSaati
                     <br />
                 }
+
 
                 <div class="input-box mt-2">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
